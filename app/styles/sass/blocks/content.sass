@@ -1,0 +1,932 @@
+:root
+	--index: calc(1vw + 1vh )
+
+.container-fluid
+	padding-left: 116px
+	padding-right: 116px
+
+@media (max-width: 1000px)
+	.container-fluid
+		padding-left: var(--bs-gutter-x) !important
+		padding-right: var(--bs-gutter-x)!important
+
+.main
+	padding-top: 60px
+	&__descr
+		margin-left: 15px
+		h2
+			font-weight: 700
+			font-size: 24px
+			line-height: 33px
+			color: #333333
+			text-transform: uppercase
+			margin-bottom: 22px
+	&__position
+		position: relative
+	&__rect
+		margin-bottom: 20px
+		height: 263px
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+		box-shadow: 0px 0px 10px #EAEFFF
+	&__ratings
+		display: flex
+		margin-right: -10px
+		margin-bottom: 22px
+	&__rating
+		cursor: pointer
+		background: url(../images/dist/baks-licke.png) 0 -50px/cover no-repeat
+		width: 40px
+		margin-right: 10px
+		height: 40px
+		transition: all .30s ease-in-out
+		&:hover
+			background-position: 0 0
+		&.active
+			background-position: 0 0
+			pointer-events: none
+	&__contacts
+		margin-bottom: 28px
+		p
+			font-weight: 400
+			font-size: 14px
+			color: #333333
+			margin-bottom: 5px
+			img
+				margin-right: 10px
+	&__btn
+		padding: 8px 40px
+		font-weight: 400
+		font-size: 14px
+		color: #819EC7
+		background: #FFFFFF
+		border: 1px solid #D4DBF2
+		border-radius: 20px
+	&__mores
+		display: flex
+		justify-content: space-between
+		margin-bottom: 12px
+	&__more
+		position: relative
+		img
+			position: relative
+		&-text
+			position: absolute
+			bottom: 0
+			font-style: normal
+			font-weight: 400
+			font-size: 12px
+			line-height: 16px
+			color: #FFFFFF
+			padding: 10px
+			p
+				margin: 0
+				margin-bottom: 10px
+		&-read
+			margin: 0 !important
+			color: #FFCA50
+	&__slide
+		img
+			display: block
+			margin: 0 auto
+	&__wrapper
+		position: absolute
+		top: 0
+		padding: 20px
+		width: 405px
+		height: 607px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+		box-shadow: 0px 0px 10px #EAEFFF
+		h4
+			font-weight: 700
+			font-size: 16px
+			color: #333333
+			margin-bottom: 20px
+	&__lists
+		margin-bottom: 40px
+	&__list
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 1px solid #EAEFFF
+		height: 47px
+		font-weight: 400
+		font-size: 16px
+		color: #969696
+		p
+			margin: 0
+		&-blue
+			color: #273B98
+	&__button
+		padding: 11px 100px
+		background: #FFFFFF
+		border: 1px solid #D4DBF2
+		border-radius: 20px
+		font-weight: 400
+		font-size: 14px
+		line-height: 100%
+		text-align: center
+		color: #819EC7
+
+.description__wrapper
+	height: 763px
+	background: #FFFFFF
+	border: 1px solid #EAEFFF
+	box-shadow: 0px 0px 10px #EAEFFF
+	padding: 0 20px
+	padding-top: 50px
+	p
+		margin: 0
+		padding-bottom: 25px
+		font-weight: 400
+		font-size: 16px
+		line-height: 22px
+		color: #333333
+
+.share
+	padding-top: 60px
+	h2
+		font-weight: 700
+		font-size: 16px
+		line-height: 22px
+		color: #333333
+		margin-bottom: 20px
+	&__cont
+		margin: 0
+	&__wrapper
+		display: flex
+		align-items: center
+		height: 80px
+		background: #F8FAFF
+		border: 1px solid #EAEFFF
+		box-shadow: 0px 0px 10px #EAEFFF
+		border-radius: 5px
+		margin-bottom: 40px
+		:nth-child(2)
+			border-left: 1px solid #D4DBF2
+			border-right: 1px solid #D4DBF2
+	&__opinion
+		height: 170px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+		border-radius: 5px
+		padding: 20px
+		h2
+			margin-left: 15px
+			font-weight: 700
+			font-size: 16px
+			color: #333333
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+		img
+			margin-bottom: 18px
+	&__answer
+		display: flex
+		justify-content: space-between
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+			span
+				font-weight: 700
+				font-size: 14px
+				color: #333333
+	&__item
+		img
+			display: block
+			margin: 0 auto
+	&__schemes
+		padding: 20px
+		width: 688px
+		height: 320px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+		border-radius: 5px
+		margin-bottom: 40px
+		:last-child
+			border-bottom: none
+		h2
+			font-weight: 700
+			font-size: 16px
+			color: #333333
+		p
+			margin: 0
+			margin-left: 20px
+			padding: 15px 0
+			font-weight: 400
+			font-size: 14px
+			color: #969696
+	&__scheme
+		display: flex
+		align-items: center
+		border-bottom: 1px solid #EAEFFF
+		img
+			width: 40px
+			height: 40px
+	&__line
+		margin: 0
+		width: 1255px
+		height: 3px
+		background: #EAEFFF
+
+.comm
+	h2
+		padding-top: 20px
+		margin-bottom: 29px
+		font-style: normal
+		font-weight: 700
+		font-size: 16px
+		line-height: 22px
+		color: #333333
+	&__form
+		p
+			margin: 0
+			margin-bottom: 5px
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+			span
+				color: #FF0000
+		&--top
+			display: flex
+		&--left
+			input
+				width: 405px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+			:nth-child(3n)
+				margin-top: 20px
+		&--right
+			textarea
+				width: 830px
+				height: 124px
+				resize: none
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+		&--bottom
+			display: flex
+		&--one
+			select
+				width: 405px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+				font-weight: 400
+				font-size: 14px
+				color: #819EC7
+				padding-left: 15px
+		&--two
+			display: flex
+			flex-direction: column
+			select
+				width: 405px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+				margin-bottom: 10px
+				font-weight: 400
+				font-size: 14px
+				color: #819EC7
+				padding-left: 15px
+			input
+				width: 405px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+				margin-bottom: 10px
+				font-weight: 400
+				font-size: 14px
+				color: #D1D1D1
+				padding-left: 15px
+			a
+				font-weight: 400
+				font-size: 14px
+				line-height: 19px
+				text-align: right
+				text-decoration-line: underline
+				color: #5277F7
+				padding-right: 10px
+		&--three
+			display: flex
+			flex-direction: column
+			select
+				width: 405px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+				margin-bottom: 10px
+				font-weight: 400
+				font-size: 14px
+				color: #819EC7
+				padding-left: 15px
+			input
+				width: 405px
+				height: 40px
+				background: #FFFFFF
+				border: 1px solid #EAEFFF
+				margin-bottom: 10px
+				font-weight: 400
+				font-size: 14px
+				color: #D1D1D1
+				padding-left: 15px
+			a
+				font-weight: 400
+				font-size: 14px
+				line-height: 19px
+				text-align: right
+				text-decoration-line: underline
+				color: #5277F7
+				padding-right: 10px
+				padding-bottom: 20px
+		&--btn
+			display: block
+			margin: 0 auto
+			padding: 10px 140px
+			background: #5277F7
+			border-radius: 20px
+			border: none
+			font-weight: 400
+			font-size: 14px
+			text-align: center
+			color: #FFFFFF
+
+.comm__line
+	width: 1255px
+	height: 1px
+	background: #EAEFFF
+
+.all-comm
+	&__wrapper
+		padding: 0 10px
+	h2
+		padding: 0
+		padding-top: 20px
+		padding-bottom: 20px
+		font-weight: 700
+		font-size: 16px
+		line-height: 22px
+		color: #333333
+	&__date
+		padding: 0
+		display: flex
+		flex-direction: column
+		label
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+		select
+			margin-top: 5px
+			width: 405px
+			height: 40px
+			background: #FFFFFF
+			border: 1px solid #EAEFFF
+			padding-left: 15px
+			font-style: normal
+			font-weight: 400
+			font-size: 14px
+			color: #819EC7
+	&__rating
+		padding: 0
+		display: flex
+		flex-direction: column
+		label
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+		select
+			margin-top: 5px
+			width: 405px
+			height: 40px
+			background: #FFFFFF
+			border: 1px solid #EAEFFF
+			padding-left: 15px
+			font-style: normal
+			font-weight: 400
+			font-size: 14px
+			color: #819EC7
+	&__criteria
+		padding: 0
+		display: flex
+		flex-direction: column
+		label
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+		select
+			margin-top: 5px
+			width: 405px
+			height: 40px
+			background: #FFFFFF
+			border: 1px solid #EAEFFF
+			padding-left: 15px
+			font-style: normal
+			font-weight: 400
+			font-size: 14px
+			color: #819EC7
+
+.trader
+	padding-top: 60px
+	&__container
+		width: 1255px
+		height: 351px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+	&__review
+		display: flex
+		align-items: center
+		width: 351px
+		height: 30px
+		background: linear-gradient(224.39deg, #FC9F47 2.1%, #D73777 64.48%, #8F44B2 98.23%)
+		border-radius: 0px 15px 15px 0px
+		h2
+			margin: 0
+			padding-left: 20px
+			font-weight: 700
+			font-size: 14px
+			color: #FFFFFF
+		p
+			margin: 0
+			padding-left: 80px
+			font-weight: 400
+			font-size: 12px
+			color: #FFFFFF
+		img
+			padding-left: 20px
+		h3
+			margin: 0
+			padding-left: 14px
+			font-weight: 700
+			font-size: 10px
+			color: #FFFFFF
+	&__exp
+		display: flex
+		align-items: center
+		h3
+			margin: 0
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__wrapper
+		display: flex
+		padding-top: 20px
+	&__comment
+		padding: 20px
+		padding-top: 10px
+		padding-bottom: 0
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+	&__plus
+		padding: 20px 0 4px 20px
+		margin-left: 20px
+		width: 597px
+		background-color: rgba(1, 178, 29, 0.1)
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #01B31D
+			span
+				margin-right: 10px
+	&__minus
+		padding: 20px 0 4px 20px
+		margin-left: 20px
+		width: 597px
+		height: 60px
+		background-color: rgba(255, 0, 0, 0.1)
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #FF0000
+			span
+				margin-right: 10px
+	&__opinion
+		display: flex
+		button
+			width: 57px
+			height: 30px
+			background: #EAEFFF
+			border: none
+			border-radius: 15px
+	&__bottom
+		padding-top: 10px
+		padding-left: 17px
+		display: flex
+	&__dislikes
+		margin-right: 10px
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__likes
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__reply
+		display: flex
+		align-items: center
+		a
+			font-weight: 400
+			font-size: 14px
+			text-decoration-line: underline
+			color: #969696
+		:nth-child(n)
+			margin-left: 80px
+		:nth-child(2n)
+			margin-left: 50px
+			color: #5277F7
+
+.trader-two
+	padding: 20px 0 20px 60px
+	&__container
+		position: relative
+		width: 1195px
+		height: 193px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+	&__review
+		display: flex
+		align-items: center
+		padding-top: 20px
+		padding-left: 20px
+		h2
+			margin: 0
+			font-weight: 700
+			font-size: 14px
+			color: #333333
+		p
+			margin: 0
+			padding-left: 40px
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__exp
+		display: flex
+		align-items: center
+		h3
+			margin: 0
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__wrapper
+		display: flex
+		height: 30px
+	&__comment
+		padding: 20px
+		padding-bottom: 0
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+	&__opinion
+		display: flex
+		button
+			width: 57px
+			height: 30px
+			background: #EAEFFF
+			border: none
+			border-radius: 15px
+	&__bottom
+		padding-top: 10px
+		padding-left: 17px
+		display: flex
+	&__dislikes
+		margin-right: 10px
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__likes
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__arrow
+		position: absolute
+		top: 20px
+		left: -60px
+
+.trader-three
+	&__container
+		position: relative
+		width: 1255px
+		height: 330px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+	&__review
+		display: flex
+		align-items: center
+		padding-top: 20px
+		padding-left: 10px
+		h2
+			margin: 0
+			font-weight: 700
+			font-size: 14px
+			color: #333333
+		p
+			margin: 0
+			padding-left: 40px
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__exp
+		display: flex
+		align-items: center
+		h3
+			margin: 0
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__wrapper
+		display: flex
+		align-items: baseline
+		height: 30px
+	&__comment
+		padding: 20px
+		padding-bottom: 0
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+	&__opinion
+		display: flex
+		button
+			width: 57px
+			height: 30px
+			background: #EAEFFF
+			border: none
+			border-radius: 15px
+	&__bottom
+		padding-top: 10px
+		padding-left: 17px
+		display: flex
+	&__dislikes
+		margin-right: 10px
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__likes
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__arrow
+		position: absolute
+		top: 20px
+		left: -60px
+
+.trader-four
+	margin-top: 20px
+	&__cheat
+		margin-top: 20px
+		padding-left: 20px
+		display: flex
+		img
+			width: 15px
+			height: 15px
+		h3
+			font-style: normal
+			font-weight: 700
+			font-size: 12px
+			color: #FF0000
+	&__container
+		position: relative
+		width: 1255px
+		height: 380px
+		border: 1px solid #EAEFFF
+	&__review
+		display: flex
+		align-items: center
+		padding-top: 20px
+		padding-left: 10px
+		h2
+			margin: 0
+			font-weight: 700
+			font-size: 14px
+			color: #333333
+		p
+			margin: 0
+			padding-left: 40px
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__exp
+		display: flex
+		align-items: center
+		h3
+			margin: 0
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__wrapper
+		display: flex
+		align-items: baseline
+		height: 30px
+	&__comment
+		padding: 20px
+		padding-bottom: 0
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+	&__opinion
+		display: flex
+		button
+			width: 57px
+			height: 30px
+			background: #EAEFFF
+			border: none
+			border-radius: 15px
+	&__bottom
+		padding-top: 10px
+		padding-left: 17px
+		display: flex
+	&__dislikes
+		margin-right: 10px
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__likes
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__arrow
+		position: absolute
+		top: 20px
+		left: -60px
+
+.trader-five
+	margin-top: 20px
+	&__container
+		position: relative
+		width: 1255px
+		height: 330px
+		background: #F8FAFF
+		border: 1px solid #EAEFFF
+	&__review
+		display: flex
+		align-items: center
+		padding-top: 20px
+		padding-left: 10px
+		h2
+			margin: 0
+			font-weight: 700
+			font-size: 14px
+			color: #333333
+		p
+			margin: 0
+			padding-left: 40px
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__exp
+		display: flex
+		align-items: center
+		h3
+			margin: 0
+			font-weight: 400
+			font-size: 12px
+			color: #819EC7
+	&__wrapper
+		display: flex
+		align-items: baseline
+		height: 30px
+	&__comment
+		padding: 20px
+		padding-bottom: 0
+		p
+			font-weight: 400
+			font-size: 14px
+			line-height: 19px
+			color: #969696
+	&__opinion
+		display: flex
+		button
+			width: 57px
+			height: 30px
+			background: #EAEFFF
+			border: none
+			border-radius: 15px
+	&__bottom
+		padding-top: 10px
+		padding-left: 17px
+		display: flex
+	&__dislikes
+		margin-right: 10px
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__likes
+		font-weight: 400
+		font-size: 12px
+		color: #819EC7
+		img
+			width: 18px
+			height: 15px
+	&__arrow
+		position: absolute
+		top: 20px
+		left: -60px
+
+.center
+	justify-content: center
+
+.write-comm
+	&__btn
+		margin-top: 20px
+		padding: 10px 140px
+		font-weight: 400
+		font-size: 14px
+		text-align: center
+		color: #FFFFFF
+		background: #5277F7
+		border-radius: 20px
+		border: none
+
+.viewed
+	margin-top: 20px
+	&__rect
+		height: 357px
+		margin-bottom: 0
+		background: #FFFFFF
+		border: none
+		border-right: 1px solid #EAEFFF
+		box-shadow: none
+	h2
+		font-weight: 700
+		font-size: 16px
+		color: #333333
+	h3
+		padding-top: 30px
+		font-weight: 700
+		font-size: 24px
+		color: #333333
+	&__position
+		display: flex
+		padding: 0
+		margin-top: 20px
+		background: #FFFFFF
+		border: 1px solid #EAEFFF
+		box-shadow: 0px 0px 10px #EAEFFF
+	&__descr
+		margin-left: 30px
+	&__ratings
+		margin-top: 20px
+	&__slide
+		img
+			display: block
+			margin: 20px auto
+
+@media (max-width:999px )
+
+@media (min-width:769px)
+
+@media (max-width:768px)
+
+@media (max-width:574px)
+
+@media (max-width:480px)
+
+@media (max-width:347px)
